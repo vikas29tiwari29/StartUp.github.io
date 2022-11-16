@@ -1,0 +1,57 @@
+body{
+    display: grid;
+    min-height: 100vh;
+}
+
+.hero{
+    align-self:start ;
+}
+
+.section-1{
+    margin-top: 15px;
+}
+
+.footerWraper{
+    align-self:end;
+}
+
+.text{
+    font-family: var(---font-2);
+    font-size: var(--sub);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-family:var(--font-2);
+    font-size: var(--sub);
+}
+
+input,textarea{
+    padding: 10px;
+    margin: 8px;
+    border: 1.5px solid #212529;
+    border-radius: 3px;
+    background-color: #eeeeee;
+}
+
+.black-btn{
+    margin-top: 10px;
+}
+
+@media (max-width:1024px){
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .section-2__left{
+        order: 1;
+    }
+    .section-2__right{
+        order: 0;
+    }
+}
+
